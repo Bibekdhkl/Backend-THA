@@ -1,22 +1,26 @@
-Redis Installation
+## Redis Installation
 
-1) For Windows
-	- Enable WSL from "Turn Windows features on or off settings"
-	- Restart the machine
-	- Install Ubuntu20.04 from Windows Store
-	- Open Ubuntu and setup name and password
+### 1) For Windows
+- Enable WSL from "Turn Windows features on or off settings"
+- Restart the machine
+- Install Ubuntu20.04 from Windows Store
+- Open Ubuntu and setup name and password
 	- Run the following commands:
-		> sudo apt-get update
-		> sudo apt-get upgrade
-		> sudo apt-get install redis-server
-		> sudo service redis-server restart
-		> redis-cli = It starts redis client where we can run any command as it connects the local server
+		```
+		sudo apt-get update
+		sudo apt-get upgrade
+		sudo apt-get install redis-server
+		sudo service redis-server restart
+		redis-cli
+		```
+	Redis-cli starts redis client where we can run any command as it connects the local server
 
-2) For Linux
-	- Run the commands:
-		> sudo apt-get install redis-server
-		> sudo service redis-server restart
-		> redis-cli
+### 2) For Linux
+Run the commands:
+
+		sudo apt-get install redis-server
+		sudo service redis-server restart
+		redis-cli
 
 -----------------------------------------------------------------------
 
@@ -26,7 +30,7 @@ so, when you type PING it gives PONG which shows redis is successfully installed
 
 -----------------------------------------------------------------------
 
-USAGE
+## Command USAGE
 
 Here, Commands are not case sensitive which means SET = set, GET = get and so on...
 
@@ -42,7 +46,7 @@ Here, Commands are not case sensitive which means SET = set, GET = get and so on
 	
 -----------------------------------------------------------------------
 
-For Arrays
+### For Arrays
 
 - LPUSH array value = lpush is left push which means pushing a value to the array from left side
 - RPUSH array value = right push adds value in an array from right
@@ -53,7 +57,7 @@ For Arrays
 -----------------------------------------------------------------------
 
 
-For Sets
+### For Sets
 
 It is an array but we can't add the same value again in sets so it prevents from repetition of a value
 
@@ -64,7 +68,7 @@ while we can clear keys and value using flushall
 
 -----------------------------------------------------------------------
 
-For Object/Hash
+### For Object/Hash
 
 In redis, objects are called hash
 
@@ -81,12 +85,11 @@ key{
 
 -----------------------------------------------------------------------
 
-Postgres Notes
+## Postgres Notes
 
--Install Postgres from their website as per the machine
+- Install Postgres from their website as per the machine
 
-Using Guide
-	> sudo su - postgres = on terminal type this to enter postgres with username postgres
-	> psql = to enter inside
-
-\conninfo to see connection
+### Running Postgres
+	sudo su - postgres = on terminal type this to enter postgres with username postgres
+	psql = after this you are able to enter postgres command
+	\conninfo =  to see whether connection successful or

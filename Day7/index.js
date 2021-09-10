@@ -1,4 +1,4 @@
-const express = require('express');//we required express
+const express = require('express');//Here we include express
 const app = express();//then we called the function
 
 //CRUD in rest api => POST GET PUT DELETE

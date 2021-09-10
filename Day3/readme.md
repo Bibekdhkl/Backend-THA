@@ -12,6 +12,8 @@
 
 * History wasn't  maintained on multiple channels on redis so we have Streams which has pipelines that is scalable from redis Version 5.0
 
+|Commands/Syntax | Description |
+| -------------------------- | ----------- |
 | XADD mystream 10000 name | XADD stream_name id key, to give random id we can use * in place of id(time stamps is stored as id) but better to use our own unique id as it is makes us easier to work on frontend|
 | XADD mystream 10000 name Anna | Anna is value and to add new value on the key id must be different |
 | XADD mystream MAXLEN 100000 * name devs | 100000 is max length in pipeline so if more than that then the old value will be removed which saves memory in database |
