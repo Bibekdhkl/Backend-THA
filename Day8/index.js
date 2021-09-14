@@ -27,7 +27,7 @@ const checkAdmin = (req,res,next) => {
 //we can use his checkAdmin to the places we want to check whether user has admin access or not simply by calling checkAdmin function
 
 //app.use doesn't work for the functions calls above 
-app.use(checkAdmin);//This middleware is that which runs before every API 
+app.use(checkAdmin);//This middleware is that which runs before every functions 
 
 app.get('/ab+cd',(req,res) => {
       res.send(req.query);

@@ -23,3 +23,35 @@
 
 *  When we send password on URL then password are also catched which creates security issues thus we need to use POST calls in two ways like form-data or raw data in json format
 
+**POST**
+* the form-data can be acquired from req.body but for that we need to install body-parser as middleware and include than into our index.js.
+
+* installing body-parser
+```
+npm install --save body-parser
+```
+* we can include body-parser on our js file by:
+```
+const body_parser = require("body-parser");
+```
+* If we have to handle the data's from HTML forms then we write middleware as:
+```
+app.use(body_parser.urlencoded({ extended : true}));
+```
+* Else, if we have to handle json data then:
+```
+app.use(body_parser.json());
+```
+But since body-parser has come inbuilt into express so we need to use above statements as:
+```
+app.use(express.urlencoded());
+app.use(express.json({extended:true}));
+```
+
+
+### Common Confusions
+* **next()** doesn't completes or stops execution unlike res.send or res.json  which returns the value and stops further execution
+
+Additional Resources:
+http://expressjs.com/en/guide/routing.html
+And after this we can implement any APIs
