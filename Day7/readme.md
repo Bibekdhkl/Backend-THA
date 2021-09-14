@@ -32,6 +32,11 @@ In some System it might not work so for that
 ```
 npx nodemon index.js
 ```
+Also we can run nodemon using it's file path as:
+```
+./node_modules/nodemon/bin/nodemon.js index.js
+```
+
 this watches index.js so if any changes happens then it updates automatically 
 
 ## Extra Notes:
