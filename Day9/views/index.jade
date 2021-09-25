@@ -1,10 +1,5 @@
-doctype html
-html
-head
-      title Jade File
-body
-      h1 Express
-      h2 This is #{title}
-      p welcome to #{title}
+extends layout
 
-//- Indentation is important in Jade
+block content
+  h1= title
+  p Welcome to #{title}

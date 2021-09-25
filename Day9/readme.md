@@ -18,3 +18,8 @@
       And then We can work with jade files as requirements. Jade convers into html after inserting values to the variables so that it can be rendered by the browser. Also similar task where we insert value can be done via eJS. 
 
 * Cookies are used in frontend for authentication and authorization which also can be set via backend
+* Express- Generator gives boilerplates of folder structure and middlewares which is used in many projects which can be installed by: 
+``` 
+npx express-generator
+```
+### THA's
