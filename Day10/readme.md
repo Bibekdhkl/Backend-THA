@@ -39,7 +39,8 @@ But we need to assign a port for this too
 forever start PORT=8080 .bin/www
 ```
 If it doesn't works then we need to edit www file on which we need to edit as normalizePort('8080')
-we can know which is running in background by:
+
+Also,we can know on which port it is running in background by:
 ```
 forever list
 ```
