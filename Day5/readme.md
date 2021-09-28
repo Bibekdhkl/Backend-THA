@@ -1,6 +1,6 @@
 ## NodeJS
 
-* Browser can't interact with the system so node was build differently to make it able to access everything on the system.
+* Browser can't interact with the system so node was build differently to make it able to access everything on the system like making a new directory on system.
 
 ### CRUD operations using fs module;
 fs is a package of node js among many other packages.
