@@ -20,6 +20,11 @@ router.get("/", function (req, res, next) {
  *
  */
 
+/*
+the tasks are divided into atomic form 
+so at first inital checks are done then the actual task is performed
+
+*/
 router.post("/register", registerInitChecks, register);
 
 module.exports = router;
