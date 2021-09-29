@@ -19,7 +19,7 @@ Things we keep in mind for 'register' POST request:
 
 
 
-
+## Notes
 * Important functions are written on utils dir
 * All the necessary actual logics that involes connection with db are written inside controllers dir
 * Tables are created on model dir
